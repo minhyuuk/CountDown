@@ -12,7 +12,7 @@ import io.paperdb.Paper
 
 class MainActivity : AppCompatActivity() {
 
-    private val LIMIT_TIME: Long = 60 * 1000 // 30초 타이머
+    private val LIMIT_TIME: Long = 60 * 1000 // 1분 타이머
 
     val binding by lazy { ActivityMainBinding.inflate(layoutInflater) } // 바인딩, 거의 매일 씀. 필수임.
 
