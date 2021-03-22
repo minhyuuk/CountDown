@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 메인 디자인 -->
+    <cn.iwgang.countdownview.CountdownView
+        android:id="@+id/countdown_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:isHideTimeBackground="false"
+        app:isShowDay="false"
+        app:isShowHour="true"
+        app:isShowMillisecond="true"
+        app:isShowMinute="true"
+        app:isShowSecond="true"
+        app:isSuffixTextBold="true"
+        app:isTimeTextBold="true"
+        app:suffixGravity="center"
+        app:suffixHour=":"
+        app:suffixMillisecond=""
+        app:suffixMinute=":"
+        app:suffixSecond=":"
+        app:suffixTextColor="@color/black"
+        app:suffixTextSize="30dp"
+        app:timeBgRadius="40dp"
+        app:timeBgSize="80dp"
+        app:timeTextColor="@color/white"
+        app:timeTextSize="32dp" />
+
+    <!-- 시작하는 버튼 -->
+
+    <Button
+        android:id="@+id/btn_start"
+        style="@style/Theme.AppCompat.Light.NoActionBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/countdown_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#A5A5A5"
+        android:text="Start" />
+
+
+</RelativeLayout>
